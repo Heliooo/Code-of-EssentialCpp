@@ -6,7 +6,9 @@
 *.user
 *.userosscache
 *.sln.docstates
-
+*.gitattributes
+*.gitignore
+*.sln
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
