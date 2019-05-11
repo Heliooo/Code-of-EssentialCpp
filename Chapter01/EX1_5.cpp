@@ -1,34 +1,28 @@
 #include <iostream>
-#include <fstream>
-#include <vector>
 #include <string>
-#include <algorithm>
 using namespace std;
-
 int main()
 {
-	ifstream infile("data_input.txt");
-	vector<string> data_input;
-	string data;
-	if (!infile)
-		cerr << "Unable to open the file" << endl;
+	/*string user_name;
+	cout << "Please enter you name" << endl;
+	cin >> user_name;
+
+	if (user_name.size() < 2)
+		cout << "Enter name failed!" << endl;
 	else
-	{
-		while (infile >> data)
-			data_input.push_back(data);
-	}
+		cout << "Enter name successfully" << endl;
+	*/
 
-	sort(data_input.begin(), data_input.end());
-
-	ofstream outfile("data_output.txt");
-	if (!outfile)
-		cerr << "Unable to open the file" << endl;
-	else
-	{
-		for (int i = 0; i < data_input.size(); i++)
-			outfile << data_input.at(i) << endl;
-	}
-
+	int len = 0;
+	char user_name[10];
+	char* char_ptr = user_name;
+	char* user = user_name;
+	cout << "Please enter your name" << endl;
+	cin >> user_name;
+	 
+     
+	cout << len << endl;
+	cout << strlen(user_name) << endl;
 	system("pause");
 	return 0;
 }

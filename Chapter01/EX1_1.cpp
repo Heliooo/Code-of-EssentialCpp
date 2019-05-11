@@ -2,7 +2,6 @@
 #include <string>
 
 using namespace std;
-/*
 int main()
 {
 	string user_name;
@@ -14,4 +13,3 @@ int main()
 		<< "...and goodbye!\n";
 	return 0;
 }
-*/
